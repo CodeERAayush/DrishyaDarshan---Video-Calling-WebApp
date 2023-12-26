@@ -1,0 +1,40 @@
+.main_screen{
+  background-color: white;
+  @apply flex justify-evenly ;
+  height: 98vh;
+
+
+.homeContainer {
+  @apply w-4/12 h-1/2 mx-auto p-2  rounded mt-8 text-white flex flex-col items-start bg-white;
+  align-self: center;
+
+  h1 {
+    @apply text-xl text-center text-black;
+  }
+
+  button {
+    @apply bg-buttonPrimary py-2 px-4 rounded;
+  }
+
+  .enterRoom {
+    @apply flex flex-col items-start mt-3 w-full ;
+
+    input {
+      @apply text-black text-lg p-1 rounded w-9/12 mb-3 text-black border border-black;
+    }
+  }
+
+  .separatorText {
+    @apply my-3 text-sm text-black;
+  }
+}
+
+.right_container{
+  @apply w-1/2 min-h-full bg-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+}

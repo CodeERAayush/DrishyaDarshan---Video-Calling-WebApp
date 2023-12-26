@@ -1,0 +1,19 @@
+.copyContainer {
+  @apply flex absolute text-white border border-white rounded p-2 bg-white;
+  left: 30px;
+  bottom: 100px;
+
+  hr {
+    @apply my-1;
+  }
+  .copyHeading {
+    @apply text-base;
+  }
+
+  .copyDescription {
+    @apply flex items-center text-sm text-black;
+  }
+  .copyBlock{
+    @apply bg-white flex text-center justify-center text-black pr-4 border-r-2 m-2;
+  }
+}
