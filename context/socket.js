@@ -13,7 +13,13 @@ export const SocketProvider = (props) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const connection = io();
+    const connection = io({
+      path: '/api/socket',
+      addTrailingSlash: false,
+      reconnectionAttempts: 5,
+      reconnectionDelay: 1000,
+      timeout: 10000,
+  });
     console.log("socket connection", connection)
     setSocket(connection);
   }, []);
